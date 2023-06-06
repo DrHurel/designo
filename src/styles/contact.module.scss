@@ -1,0 +1,51 @@
+.contactForm {
+  display: flex;
+  height: 50vh !important;
+  border-radius: 2vh;
+  padding: 0 6%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--peach);
+  color: white;
+
+  div {
+    width: 42%;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  form {
+
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 2rem;
+      border: none;
+      border-bottom: 2px solid white;
+      background-color: transparent;
+      color: white;
+      font-size: 1.5rem;
+      padding: 0.5rem 0;
+    }
+
+    textarea {
+      resize: none;
+      background-color: transparent;
+    }
+
+  }
+
+
+}
+
+.location {
+
+  display: flex;
+  justify-content: space-around;
+
+}
