@@ -1,3 +1,4 @@
+import { LocationIcon } from '@/app/components/locationIcon'
 import styles from '@/styles/about.module.scss'
 
 export default function About() {
@@ -36,18 +37,7 @@ export default function About() {
     </section>
 
 
-    <section>
-
-
-
-      <div>Canada
-        See location</div>
-      <div>Australia
-        See location
-      </div>
-      <div>United Kingdom
-        See location</div>
-    </section>
+    <LocationIcon />
 
     <section className={styles.info}>
       <div>

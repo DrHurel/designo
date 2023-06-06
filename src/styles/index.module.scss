@@ -6,22 +6,78 @@
   align-items: center;
   background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50%;
+  background-position: right top;
 
-  height: 70vh !important;
+  height: 70vh;
   border-radius: 2vh;
   margin-bottom: 15vh;
+
+
+
+
 
   div {
     width: 42%;
     color: white;
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    &:first-child {
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      * {
+        width: fit-content;
+      }
+
+      h1 {
+        font-size: 3vw;
+        margin-bottom: 1rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 5vw;
+        }
+      }
     }
+
+
+
+
+    img {
+      margin-top: 25vh;
+    }
+
   }
+
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 100vh;
+    background-position: center right;
+    background-size: 100%;
+    padding: 0 5%;
+
+    div {
+      width: 100%;
+      height: 50%;
+      padding: 0 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+
+
+
 
 }
 
@@ -31,6 +87,7 @@
   grid-template-rows: repeat(2, 1fr);
   height: 67.5vh;
   grid-gap: 1rem;
+
 
   div {
     border-radius: 2vh;
@@ -80,6 +137,33 @@
 
   }
 
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      height: 45vh;
+
+      &:first-child {
+
+        background-image: url(/assets/home/tablet/image-web-design.jpg);
+      }
+
+      &:nth-child(2) {
+
+
+        background-image: url(/assets/home/tablet/image-app-design.jpg);
+      }
+
+      &:nth-child(3) {
+
+
+        background-image: url(/assets/home/tablet/image-graphic-design.jpg);
+      }
+
+    }
+  }
+
 
 }
 
@@ -97,5 +181,60 @@
     width: 33%;
   }
 
+  img {
+    background-position: center;
+    background-size: cover;
+    background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
 
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: fit-content;
+    padding: none;
+    gap: 3vh;
+    margin-bottom: 15vh;
+
+    div {
+      width: 100%;
+      height: 50%;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+
+      span {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+
+
+
+  }
+
+}
+
+.leaf_1 {
+  position: absolute;
+  top: 60vh;
+  left: 0;
+  z-index: -1;
+
+}
+
+.leaf_2 {
+  position: absolute;
+  top: 170vh;
+
+
+  transform: rotate(180deg);
+  right: 0;
+  z-index: -1;
 }

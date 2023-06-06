@@ -9,7 +9,7 @@ export default function Locations() {
 
 
     <section className={styles.location}>
-      <div>
+      <div id='canada'>
         <h2>Canada</h2>
         <div>
           <p>Designo Central Office
@@ -28,7 +28,7 @@ export default function Locations() {
         <img src="/assets/locations/desktop/image-map-australia.png" alt="map australia" />
 
       </div>
-      <div>
+      <div id="autralia">
         <h2>Australia</h2>
         <div>
           <p>
@@ -46,7 +46,7 @@ export default function Locations() {
       </div>
 
 
-      <div>
+      <div id='uk'>
         <h2>United Kingdom</h2>
         <div>
           <p>Designo UK Office

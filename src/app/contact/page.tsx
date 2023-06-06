@@ -1,5 +1,6 @@
 import { ContactForm } from "../components/contactForm";
 import styles from '@/styles/contact.module.scss'
+import { LocationIcon } from "../components/locationIcon";
 
 export default function Contact() {
 
@@ -13,14 +14,8 @@ export default function Contact() {
       </div>
       <ContactForm />
     </section>
-    <section className={styles.location}>
-      <div>  Canada
-        See location</div>
-      <div>Australia
-        See location</div>
-      <div>  United Kingdom
-        See location</div>
-    </section>
+
+    <LocationIcon />
 
 
 

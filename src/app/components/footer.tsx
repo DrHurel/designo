@@ -13,16 +13,27 @@ export function Footer() {
     </section>
     <section>
       <div>
-        Designo Central Office
-        3886 Wellington Street
-        Toronto, Ontario M9C 3J5
+        <p>Designo Central Office</p>
+        <p>3886 Wellington Street</p>
+        <p>Toronto, Ontario M9C 3J5
+        </p>
+
+
 
       </div>
-      <div> Contact Us (Central Office)
-        P : +1 253-863-8967
-        M : contact@designo.co
+      <div>
+        <p>Contact Us (Central Office)</p>
+        <p>P : +1 253-863-8967</p>
+        <p>M : contact@designo.co</p>
       </div>
-      <div></div>
+      <div>
+        <a href="https://facebook.com"><img src="/assets/shared/desktop/icon-facebook.svg" alt="" /></a>
+        <a><img src="/assets/shared/desktop/icon-instagram.svg" alt="" /></a>
+        <a><img src="/assets/shared/desktop/icon-pinterest.svg" alt="" /></a>
+        <a><img src="/assets/shared/desktop/icon-twitter.svg" alt="" /></a>
+        <a><img src="/assets/shared/desktop/icon-youtube.svg" alt="" /></a>
+
+      </div>
 
 
     </section>
