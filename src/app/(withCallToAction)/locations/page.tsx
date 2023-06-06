@@ -1,53 +1,70 @@
+import styles from '@/styles/location.module.scss'
+
 export default function Locations() {
 
   return <>
-    Our Company
-    Locations
-    Contact
 
-    Canada
-    Designo Central Office
-    3886 Wellington Street
-    Toronto, Ontario M9C 3J5
 
-    Contact
-    P : +1 253-863-8967
-    M : contact@designo.co
 
-    Australia
-    Designo AU Office
-    19 Balonne Street
-    New South Wales 2443
 
-    Contact
-    P : (02) 6720 9092
-    M : contact@designo.au
 
-    United Kingdom
-    Designo UK Office
-    13 Colorado Way
-    Rhyd-y-fro SA8 9GA
+    <section className={styles.location}>
+      <div>
+        <h2>Canada</h2>
+        <div>
+          <p>Designo Central Office
+            3886 Wellington Street
+            Toronto, Ontario M9C 3J5</p>
+          <p>Contact
+            P : +1 253-863-8967
+            M : contact@designo.co</p>
+        </div>
+      </div>
+      <div>
+        <img src="/assets/locations/desktop/image-map-canada.png" alt="map canada" />
 
-    Contact
-    P : 078 3115 1400
-    M : contact@designo.uk
+      </div>
+      <div>
+        <img src="/assets/locations/desktop/image-map-australia.png" alt="map australia" />
 
-    Let’s talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can
-    help your business grow.
-    Get in touch
+      </div>
+      <div>
+        <h2>Australia</h2>
+        <div>
+          <p>
+            Designo AU Office
+            19 Balonne Street
+            New South Wales 2443
+          </p>
+          <p>Contact
+            P : (02) 6720 9092
+            M :contact@designo.au</p>
 
-    Our company
-    Locations
-    Contact
+        </div>
 
-    Designo Central Office
-    3886 Wellington Street
-    Toronto, Ontario M9C 3J5
 
-    Contact Us (Central Office)
-    P : +1 253-863-8967
-    M : contact@designo.co
+      </div>
+
+
+      <div>
+        <h2>United Kingdom</h2>
+        <div>
+          <p>Designo UK Office
+            13 Colorado Way
+            Rhyd-y-fro SA8 9GA</p>
+          <p> Contact
+            P : 078 3115 1400
+            M : contact@designo.uk</p>
+        </div>
+
+
+
+      </div>
+      <div>
+        <img src="/assets/locations/desktop/image-map-united-kingdom.png" alt="map uk" />
+
+      </div>
+    </section>
   </>
 
 

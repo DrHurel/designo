@@ -11,3 +11,13 @@ export function ContactForm() {
     </form>
   )
 }
+
+/**
+ * 
+    Name
+    Email address
+    Phone
+    Your message
+    Submit
+
+ */

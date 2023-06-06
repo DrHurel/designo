@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function CallToAction() {
 
   return <section className="callToAction">
@@ -7,19 +9,10 @@ export function CallToAction() {
       <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.
       </p></div>
 
-    <button>Get in touch</button>
+    <Link href="/contact"><button>Get in touch</button></Link>
 
   </section>
 
 
 }
 
-/**
- * 
-    Name
-    Email address
-    Phone
-    Your message
-    Submit
-
- */
