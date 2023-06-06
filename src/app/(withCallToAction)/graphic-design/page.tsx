@@ -1,44 +1,48 @@
+import { Portfollio } from "@/app/components/portfollio";
+import Link from "next/link";
+import styles from '@/styles/design.module.scss'
+
 export default function GraphicDesign() {
 
+  const Data = [
+    { image: "/assets/graphic-design/desktop/image-change.jpg", title: "Tim Brown", description: "A book cover designed for Tim Brown’s new release, ‘Change’" },
+    { image: "/assets/graphic-design/desktop/image-boxed-water.jpg", title: "Boxed water", description: "A simple packaging concept made for Boxed Water" },
+    { image: "/assets/graphic-design/desktop/image-science.jpg", title: "Science!", description: "A poster made in collaboration with the Federal Art Project" },
+  ]
+
   return <>
-    Our Company
-    Locations
-    Contact
 
-    Graphic design
-    We deliver eye-catching branding materials that are tailored to meet your business objectives.
 
-    Tim Brown
-    A book cover designed for Tim Brown’s new release, ‘Change’
 
-    Boxed water
-    A simple packaging concept made for Boxed Water
 
-    Science!
-    A poster made in collaboration with the Federal Art Project
 
-    App Design
-    View Projects
+    <section className={styles.hero}>
+      <h1>Graphic design</h1>
+      <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.
+      </p>
+    </section>
 
-    Web Design
-    View Projects
+    <Portfollio data={Data} />
 
-    Let’s talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can
-    help your business grow.
-    Get in touch
 
-    Our company
-    Locations
-    Contact
 
-    Designo Central Office
-    3886 Wellington Street
-    Toronto, Ontario M9C 3J5
+    <section className={styles.redirection}>
+      <div>
+        <Link href="/app-design">
+          <h2>App Design</h2>
+          <p>View Projects</p>
+        </Link>
 
-    Contact Us (Central Office)
-    P : +1 253-863-8967
-    M : contact@designo.co
+      </div>
+      <div>
+        <Link href="/web-design">
+          <h2>Web Design</h2>
+          <p>View Projects</p>
+        </Link>
+
+
+      </div>
+    </section>
   </>
 
 }

@@ -1,51 +1,49 @@
+import { Portfollio } from "@/app/components/portfollio";
+import Link from "next/link";
+import styles from '@/styles/design.module.scss'
+
 export default function AppDesign() {
 
+  const Data = [
+    { image: "/assets/app-design/desktop/image-airfilter.jpg", title: "Airfilter", description: "Solving the problem of poor indoor air quality by filtering the air" },
+    { image: "/assets/app-design/desktop/image-eyecam.jpg", title: "Eyecam", description: "Product that lets you edit your favorite photos and videos at any time" },
+    { image: "/assets/app-design/desktop/image-faceit.jpg", title: "Faceit", description: "Get to meet your favorite internet superstar with the faceit app" },
+    { image: "/assets/app-design/desktop/image-todo.jpg", title: "Todo", description: "A todo app that features cloud sync with light and dark mode" },
+    { image: "/assets/app-design/desktop/image-loopstudios.jpg", title: "Loopstudios", description: "A VR experience app made for Loopstudios" },
+  ]
+
+
   return <>
-    Our Company
-    Locations
-    Contact
 
-    App design
-    Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.
+    <section className={styles.hero}>
+      <h1>App design</h1>
+      <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.
+      </p>
+    </section>
 
-    Airfilter
-    Solving the problem of poor indoor air quality by filtering the air
+    <Portfollio data={Data} />
 
-    Eyecam
-    Product that lets you edit your favorite photos and videos at any time
 
-    Faceit
-    Get to meet your favorite internet superstar with the faceit app
 
-    Todo
-    A todo app that features cloud sync with light and dark mode
+    <section className={styles.redirection}>
+      <div>
+        <Link href="/web-design">
+          <h2>Web Design</h2>
+          <p>View Projects</p>
+        </Link>
 
-    Loopstudios
-    A VR experience app made for Loopstudios
+      </div>
+      <div>
+        <Link href="/graphic-design">
+          <h2>Graphic Design</h2>
+          <p>View Projects</p>
+        </Link>
 
-    Web Design
-    View Projects
 
-    Graphic Design
-    View Projects
-
-    Let’s talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can help
-    your business grow.
-    Get in touch
-
-    Our company
-    Locations
-    Contact
-
-    Designo Central Office
-    3886 Wellington Street
-    Toronto, Ontario M9C 3J5
-
-    Contact Us (Central Office)
-    P : +1 253-863-8967
-    M : contact@designo.co
+      </div>
+    </section>
   </>
 
 
 }
+

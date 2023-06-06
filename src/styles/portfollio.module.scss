@@ -1,0 +1,53 @@
+.portfollio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  div {
+
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+      border: none;
+      margin: 0;
+
+    }
+
+
+    .info {
+
+      border-radius: 0 0 15px 15px;
+      width: 100%;
+      height: 15vh;
+      background-color: #FDF3F0;
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      h3 {
+        margin: 5%;
+        color: var(--peach);
+      }
+
+      p {
+        width: 70%;
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: var(--peach);
+
+        * {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}

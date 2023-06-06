@@ -1,53 +1,51 @@
+import { Portfollio } from "@/app/components/portfollio"
+import styles from '@/styles/design.module.scss'
+import Link from "next/link"
+
 export default function WebDesign() {
 
+  const Data: any[] = [
+    { image: "/assets/web-design/desktop/image-express.jpg", title: "Express", description: "A multi-carrier shipping website for ecommerce businesses" },
+    { image: "/assets/web-design/desktop/image-transfer.jpg", title: "Transfer", description: "Site for low-cost money transfers and sending money within seconds" },
+    { image: "/assets/web-design/desktop/image-photon.jpg", title: "Photon", description: "A state-of-the-art music player with high-resolution audio and DSP effects" },
+    { image: "/assets/web-design/desktop/image-builder.jpg", title: "Builder", description: "Connects users with local contractors based on their location" },
+    { image: "/assets/web-design/desktop/image-blogr.jpg", title: "Blogr", description: "Blogr is a platform for creating an online blog or publication" },
+    { image: "/assets/web-design/desktop/image-camp.jpg", title: "Camp", description: "Get expert training in coding, data, design, and digital marketing" },
+
+  ]
+
+
   return <>
-    Our Company
-    Locations
-    Contact
 
-    Web design
-    We build websites that serve as powerful marketing tools and bring memorable brand experiences.
 
-    Express
-    A multi-carrier shipping website for ecommerce businesses
+    <section className={styles.hero}>
+      <h1>Web design</h1>
+      <p>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
+    </section>
 
-    Transfer
-    Site for low-cost money transfers and sending money within seconds
+    <Portfollio data={Data} />
 
-    Photon
-    A state-of-the-art music player with high-resolution audio and DSP effects
 
-    Builder
-    Connects users with local contractors based on their location
 
-    Blogr
-    Blogr is a platform for creating an online blog or publication
+    <section className={styles.redirection}>
+      <div>
+        <Link href="/app-design">
+          <h2>App Design</h2>
+          <p>View Projects</p>
+        </Link>
 
-    Camp
-    Get expert training in coding, data, design, and digital marketing
+      </div>
+      <div>
+        <Link href="/graphic-design">
+          <h2>Graphic Design</h2>
+          <p>View Projects</p>
+        </Link>
 
-    App Design
-    View Projects
 
-    Graphic Design
-    View Projects
+      </div>
+    </section>
 
-    Let’s talk about your project
-    Ready to take it to the next level? Contact us today and find out how our expertise can help
-    your business grow.
-    Get in touch
 
-    Our company
-    Locations
-    Contact
-
-    Designo Central Office
-    3886 Wellington Street
-    Toronto, Ontario M9C 3J5
-
-    Contact Us (Central Office)
-    P : +1 253-863-8967
-    M : contact@designo.co
   </>
 
 }
