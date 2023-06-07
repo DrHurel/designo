@@ -60,10 +60,18 @@
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
-    height: 100vh;
+    height: auto;
+
     background-position: center right;
     background-size: 100%;
     padding: 0 5%;
+    height: max(80vh, 100vw);
+
+    @media screen and (max-width: 440px) {
+      height: max(85vh, 100vw);
+
+
+    }
 
     div {
       width: 100%;
