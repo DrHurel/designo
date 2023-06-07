@@ -16,7 +16,7 @@
 
 
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column;
 
@@ -116,7 +116,7 @@
 
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       &:nth-child(even) {
         margin-bottom: 15vh;
         aspect-ratio: 3/1;

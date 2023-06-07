@@ -2,7 +2,7 @@
   height: 25vh;
   background-color: var(--peach);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: auto;
     width: 100%;
     aspect-ratio: 100/37;
@@ -18,7 +18,7 @@
     background-position: -20% 50%;
     background-image: url(/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       background-position: center left;
       background-size: 120%;
       background-image: url(/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
@@ -30,7 +30,7 @@
     background-position: -20% 50%;
     background-image: url(/assets/app-design/desktop/bg-pattern-intro-app.svg);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       background-position: center left;
       background-size: 120%;
       background-image: url(/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
@@ -42,7 +42,7 @@
     background-position: center right;
     background-image: url(/assets/web-design/desktop/bg-pattern-intro-web.svg);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       background-position: center left;
       background-size: 120%;
       background-image: url(/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
@@ -82,7 +82,7 @@
   display: flex;
   gap: 2rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
 
   }
@@ -93,7 +93,7 @@
   div {
     height: 30vh;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1025px) {
       width: calc(50% - 1rem);
 
     }

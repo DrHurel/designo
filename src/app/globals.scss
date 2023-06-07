@@ -17,7 +17,7 @@
 
   --border-radius: 2vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     --padding-root: 0 3%;
 
   }
@@ -166,7 +166,7 @@ main {
   width: 76%;
   margin: var(--padding-root);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     width: 94%;
   }
 
