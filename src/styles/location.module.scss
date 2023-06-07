@@ -24,7 +24,7 @@
   }
 
   div {
-    border-radius: 2vh;
+    border-radius: var(--border-radius);
     background-color: var(--very-light-peach);
 
     display: flex;
@@ -68,7 +68,7 @@
     img {
       width: 100%;
       height: 100%;
-      border-radius: 2vh;
+      border-radius: var(--border-radius);
       object-fit: cover;
       object-position: center;
 

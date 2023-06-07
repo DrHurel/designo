@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   aspect-ratio: 100/46;
-  border-radius: 2vh;
+  border-radius: var(--border-radius);
   padding: 0 6%;
   align-items: center;
   justify-content: space-between;
