@@ -1,6 +1,52 @@
 .hero {
-  height: 20vh !important;
+  height: 25vh;
   background-color: var(--peach);
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 100/37;
+
+  }
+
+
+  background-repeat: no-repeat;
+
+  &.graphicDesign {
+    background-position: -20% 50%;
+    background-image: url(/assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+
+    @media screen and (max-width: 768px) {
+      background-position: center left;
+      background-size: 120%;
+      background-image: url(/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
+    }
+
+  }
+
+  &.appDesign {
+    background-position: -20% 50%;
+    background-image: url(/assets/app-design/desktop/bg-pattern-intro-app.svg);
+
+    @media screen and (max-width: 768px) {
+      background-position: center left;
+      background-size: 120%;
+      background-image: url(/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
+    }
+
+  }
+
+  &.webDesign {
+    background-position: center right;
+    background-image: url(/assets/web-design/desktop/bg-pattern-intro-web.svg);
+
+    @media screen and (max-width: 768px) {
+      background-position: center left;
+      background-size: 120%;
+      background-image: url(/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
+    }
+  }
+
   overflow: hidden;
   border-radius: 2vh;
   margin-bottom: 15vh;
@@ -23,8 +69,20 @@
   display: flex;
   gap: 2rem;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+  }
+
+  margin-bottom: 15vh;
+
+
   div {
-    width: calc(50% - 1rem);
+    @media screen and (min-width: 769px) {
+      width: calc(50% - 1rem);
+
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,23 +92,8 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 30vh;
-    margin-bottom: 15vh;
 
-    &:first-child {
-      border-radius: 2vh;
-      background-color: var(--peach);
-      color: white;
-
-      background-image: url(/assets/home/desktop/image-app-design.jpg);
-    }
-
-    &:last-child {
-      border-radius: 2vh;
-      background-color: var(--black);
-      color: white;
-
-      background-image: url(/assets/home/desktop/image-graphic-design.jpg);
-    }
+    border-radius: 2vh;
 
     a {
       border-radius: 2vh;
@@ -68,4 +111,16 @@
       }
     }
   }
+}
+
+.appLink {
+  background-image: url(/assets/home/desktop/image-app-design.jpg);
+}
+
+.graphicLink {
+  background-image: url(/assets/home/desktop/image-graphic-design.jpg);
+}
+
+.webLink {
+  background-image: url(/assets/home/desktop/image-web-design-small.jpg);
 }

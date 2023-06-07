@@ -15,7 +15,7 @@ export default function AppDesign() {
 
   return <>
 
-    <section className={styles.hero}>
+    <section className={styles.hero + " " + styles.appDesign}>
       <h1>App design</h1>
       <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.
       </p>
@@ -26,17 +26,17 @@ export default function AppDesign() {
 
 
     <section className={styles.redirection}>
-      <div>
+      <div className={styles.webLink}>
         <Link href="/web-design">
           <h2>Web Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
         </Link>
 
       </div>
-      <div>
+      <div className={styles.graphicLink}>
         <Link href="/graphic-design">
           <h2>Graphic Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
         </Link>
 
 

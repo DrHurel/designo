@@ -16,7 +16,7 @@ export default function GraphicDesign() {
 
 
 
-    <section className={styles.hero}>
+    <section className={styles.hero + " " + styles.graphicDesign}>
       <h1>Graphic design</h1>
       <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.
       </p>
@@ -27,17 +27,17 @@ export default function GraphicDesign() {
 
 
     <section className={styles.redirection}>
-      <div>
+      <div className={styles.appLink}>
         <Link href="/app-design">
           <h2>App Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
         </Link>
 
       </div>
-      <div>
+      <div className={styles.webLink}>
         <Link href="/web-design">
           <h2>Web Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
         </Link>
 
 

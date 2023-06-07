@@ -17,21 +17,21 @@ export default function Home() {
       </section>
       <section className={styles.design}>
         <div><Link href="/web-design"><h2>Web Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
 
         </Link>
         </div>
         <div>
           <Link href="/app-design">
             <h2>App Design</h2>
-            <p>View Projects</p>
+            <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
           </Link>
 
         </div>
         <div>
           <Link href="/graphic-design">
             <h2>Graphic Design</h2>
-            <p>View Projects</p>
+            <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
           </Link>
 
 

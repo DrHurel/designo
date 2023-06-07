@@ -18,7 +18,7 @@ export default function WebDesign() {
   return <>
 
 
-    <section className={styles.hero}>
+    <section className={styles.hero + " " + styles.webDesign}>
       <h1>Web design</h1>
       <p>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
     </section>
@@ -28,17 +28,17 @@ export default function WebDesign() {
 
 
     <section className={styles.redirection}>
-      <div>
+      <div className={styles.appLink}>
         <Link href="/app-design">
           <h2>App Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
         </Link>
 
       </div>
-      <div>
+      <div className={styles.graphicLink}>
         <Link href="/graphic-design">
           <h2>Graphic Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
         </Link>
 
 

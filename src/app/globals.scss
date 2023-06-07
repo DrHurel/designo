@@ -17,6 +17,11 @@
     --padding-root: 0 3%;
   }
 
+  @media screen and (max-width: 440px) {
+    --padding-root: 0;
+
+
+  }
 
 
 }
@@ -55,10 +60,12 @@ nav {
 footer {
   z-index: 1;
   height: 38vh;
-  padding-top: 8vh;
-  padding-bottom: 5vh;
+
+
   width: 100%;
   padding: var(--padding-root);
+  padding-top: 12vh;
+  padding-bottom: 5vh;
   background-color: var(--black);
   color: var(--white);
 
