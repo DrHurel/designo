@@ -1,4 +1,4 @@
-import { CallToAction } from "../components/callToAction"
+import { CallToAction } from "../../components/callToAction"
 
 export default function CallToActionLayout({
   children,

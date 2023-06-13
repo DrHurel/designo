@@ -1,6 +1,6 @@
-import { ContactForm } from "../components/contactForm";
+import { ContactForm } from "../../components/contactForm";
 import styles from '@/styles/contact.module.scss'
-import { LocationIcon } from "../components/locationIcon";
+import { LocationIcon } from "../../components/locationIcon";
 
 export default function Contact() {
 

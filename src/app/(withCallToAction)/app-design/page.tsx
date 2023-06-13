@@ -1,4 +1,4 @@
-import { Portfollio } from "@/app/components/portfollio";
+import { Portfollio } from "@/components/portfollio";
 import Link from "next/link";
 import styles from '@/styles/design.module.scss'
 

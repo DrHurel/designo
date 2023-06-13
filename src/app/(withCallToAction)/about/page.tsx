@@ -1,4 +1,4 @@
-import { LocationIcon } from '@/app/components/locationIcon'
+import { LocationIcon } from '@/components/locationIcon'
 import styles from '@/styles/about.module.scss'
 
 export default function About() {
