@@ -9,7 +9,7 @@ export function Portfollio({ data }: { data: any[] }) {
 
       data.map((item, index) => {
         return <div key={index}>
-          <img src={item.image} alt={item.title} />
+          <Image src={item.image} alt={item.title} placeholder='blur' />
           <div className={styles.info}>
             <h3>{item.title}</h3>
             <p>{item.description}</p>

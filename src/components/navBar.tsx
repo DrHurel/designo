@@ -2,6 +2,9 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import Image from "next/image"
+
+import logoDark from '/public/assets/shared/desktop/logo-dark.png'
 
 export function NavBar() {
 
@@ -21,7 +24,7 @@ export function NavBar() {
   }, [])
 
   return <nav>
-    <Link href="/"><img src="/assets/shared/desktop/logo-dark.png" alt="logo" /></Link>
+    <Link href="/"><Image src={logoDark} alt="logo" /></Link>
     <div>
       <input type="checkbox" name="menu" id="menu" />
       <div className="anim">

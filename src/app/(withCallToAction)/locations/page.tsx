@@ -1,16 +1,18 @@
 import styles from '@/styles/location.module.scss'
+import Image from 'next/image'
+
+import imgCanada from '/public/assets/locations/desktop/image-map-canada.png'
+import imgAustralia from '/public/assets/locations/desktop/image-map-australia.png'
+import imgUk from '/public/assets/locations/desktop/image-map-united-kingdom.png'
+
+
 
 export default function Locations() {
 
   return <>
-
-
-
-
-
     <section className={styles.location}>
       <div>
-        <img src="/assets/locations/desktop/image-map-canada.png" alt="map canada" />
+        <Image src={imgCanada} alt="map canada" placeholder='blur' />
 
       </div>
       <div id='canada'>
@@ -33,7 +35,7 @@ export default function Locations() {
       </div>
 
       <div>
-        <img src="/assets/locations/desktop/image-map-australia.png" alt="map australia" />
+        <Image src={imgAustralia} alt="map australia" placeholder='blur' />
 
       </div>
       <div id="autralia">
@@ -63,8 +65,7 @@ export default function Locations() {
       </div>
 
       <div>
-        <img src="/assets/locations/desktop/image-map-united-kingdom.png" alt="map uk" />
-
+        <Image src={imgUk} alt="map uk" placeholder='blur' />
       </div>
       <div id='uk'>
         <h2>United Kingdom</h2>

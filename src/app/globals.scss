@@ -127,13 +127,16 @@ nav {
   a {
     height: 100%;
     align-items: center;
+    justify-content: center;
     display: flex;
 
 
 
     img {
       transition: all 0.5s ease-in-out;
-      max-height: 20%;
+      height: 20%;
+      width: auto;
+      object-position: center center;
 
       @media screen and (max-width: 440px) {
         margin-left: 5vw;
@@ -409,7 +412,8 @@ footer {
       @media screen and (max-width: 600px) {
         img {
           border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-          width: 100%;
+          width: auto;
+          height: auto;
           padding-left: 10%;
           padding-right: 10%;
         }

@@ -1,15 +1,24 @@
 import { Portfollio } from "@/components/portfollio";
 import Link from "next/link";
 import styles from '@/styles/design.module.scss'
+import Image from 'next/image'
+
+import imgAirfilter from '/public/assets/app-design/desktop/image-airfilter.jpg'
+import imgEyecam from '/public/assets/app-design/desktop/image-eyecam.jpg'
+import imgFaceit from '/public/assets/app-design/desktop/image-faceit.jpg'
+import imgTodo from '/public/assets/app-design/desktop/image-todo.jpg'
+import imgLoopstudios from '/public/assets/app-design/desktop/image-loopstudios.jpg'
+
+import iconRightArrow from '/public/assets/shared/desktop/icon-right-arrow.svg'
 
 export default function AppDesign() {
 
   const Data = [
-    { image: "/assets/app-design/desktop/image-airfilter.jpg", title: "Airfilter", description: "Solving the problem of poor indoor air quality by filtering the air" },
-    { image: "/assets/app-design/desktop/image-eyecam.jpg", title: "Eyecam", description: "Product that lets you edit your favorite photos and videos at any time" },
-    { image: "/assets/app-design/desktop/image-faceit.jpg", title: "Faceit", description: "Get to meet your favorite internet superstar with the faceit app" },
-    { image: "/assets/app-design/desktop/image-todo.jpg", title: "Todo", description: "A todo app that features cloud sync with light and dark mode" },
-    { image: "/assets/app-design/desktop/image-loopstudios.jpg", title: "Loopstudios", description: "A VR experience app made for Loopstudios" },
+    { image: imgAirfilter, title: "Airfilter", description: "Solving the problem of poor indoor air quality by filtering the air" },
+    { image: imgEyecam, title: "Eyecam", description: "Product that lets you edit your favorite photos and videos at any time" },
+    { image: imgFaceit, title: "Faceit", description: "Get to meet your favorite internet superstar with the faceit app" },
+    { image: imgTodo, title: "Todo", description: "A todo app that features cloud sync with light and dark mode" },
+    { image: imgLoopstudios, title: "Loopstudios", description: "A VR experience app made for Loopstudios" },
   ]
 
 
@@ -29,14 +38,14 @@ export default function AppDesign() {
       <div className={styles.webLink}>
         <Link href="/web-design">
           <h2>Web Design</h2>
-          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
+          <p>View Projects <Image src={iconRightArrow} alt="" /></p>
         </Link>
 
       </div>
       <div className={styles.graphicLink}>
         <Link href="/graphic-design">
           <h2>Graphic Design</h2>
-          <p>View Projects <img src="/assets/shared/desktop/icon-right-arrow.svg" alt="" /></p>
+          <p>View Projects <Image src={iconRightArrow} alt="" /></p>
         </Link>
 
 

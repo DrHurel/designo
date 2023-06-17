@@ -1,5 +1,18 @@
 import { LocationIcon } from '@/components/locationIcon'
 import styles from '@/styles/about.module.scss'
+import Image from 'next/image'
+
+import desktopHero from '/public/assets/about/desktop/image-about-hero.jpg'
+import mobileHero from '/public/assets/about/mobile/image-about-hero.jpg'
+import tabletHero from '/public/assets/about/tablet/image-about-hero.jpg'
+
+import desktopWorld from '/public/assets/about/desktop/image-world-class-talent.jpg'
+import mobileWorld from '/public/assets/about/mobile/image-world-class-talent.jpg'
+import tabletWorld from '/public/assets/about/tablet/image-world-class-talent.jpg'
+
+import desktopReal from '/public/assets/about/desktop/image-real-deal.jpg'
+import mobileReal from '/public/assets/about/mobile/image-real-deal.jpg'
+import tabletReal from '/public/assets/about/tablet/image-real-deal.jpg'
 
 export default function About() {
 
@@ -18,11 +31,11 @@ export default function About() {
           digital experiences that connect with our clients' audiences.
         </p>
       </div>
-      <img src="/assets/about/desktop/image-about-hero.jpg" alt="test" />
+      <Image src={desktopHero} alt='hero banner' placeholder='blur' />
 
     </section>
     <section className={styles.info}>
-      <img src="/assets/about/desktop/image-world-class-talent.jpg" alt="testé" className={styles.firstImg} />
+      <Image src={desktopWorld} alt="testé" placeholder='blur' className={styles.firstImg} />
       <div>
         <h2>World-class talent</h2>
         <p>
@@ -42,13 +55,13 @@ export default function About() {
     <section className={styles.info}>
       <div>
         <h2>The real deal</h2>
-        <p>As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
+        <p>As strategic partners in our clients' businesses, we are ready to take on any challenge as our own.
           Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
           opportunity. We make design and technology more accessible and give you tools to measure success.</p>
         <p> We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies,
           we inspire audiences to take action and drive real results.</p>
       </div>
-      <img src="/assets/about/desktop/image-real-deal.jpg" alt="real" className={styles.secondImg} />
+      <Image src={desktopReal} alt="real" placeholder='blur' className={styles.secondImg} />
     </section>
 
 
