@@ -63,21 +63,30 @@
 
       flex-direction: row;
       width: 100%;
+      padding-left: 2vh;
 
       @media screen and (max-width: 440px) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-
+        padding-left: 0;
       }
 
-      padding-left: 2vh;
+
 
       span {
         width: 50%;
         margin: 0;
         padding: 0;
+
+        @media screen and (max-width: 440px) {
+          width: 100%;
+
+
+
+        }
+
 
         p {
           &:first-child {
