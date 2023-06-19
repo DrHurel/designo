@@ -26,5 +26,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://designo-two.vercel.app/locations',
       lastModified: new Date(),
     },
+    {
+      url: 'https://designo-two.vercel.app/',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://designo-two.vercel.app/a-propos',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://designo-two.vercel.app/home',
+      lastModified: new Date(),
+    },
+
   ]
 }
