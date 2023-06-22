@@ -37,11 +37,11 @@ export function Footer() {
         <p>M : contact@designo.co</p>
       </div>
       <div>
-        <a href="https://facebook.com" target='_blank'><Image src={iconFacebook} alt="" /></a>
-        <a><Image src={iconInstagram} alt="" /></a>
-        <a><Image src={iconPinterest} alt="" /></a>
-        <a><Image src={iconTwitter} alt="" /></a>
-        <a><Image src={iconYoutube} alt="" /></a>
+        <a href="https://facebook.com" target='_blank'><Image src={iconFacebook} alt="facebook" /></a>
+        <a href="https://facebook.com" target='_blank'><Image src={iconInstagram} alt="instagram" /></a>
+        <a href="https://facebook.com" target='_blank'><Image src={iconPinterest} alt="pinterest" /></a>
+        <a href="https://facebook.com" target='_blank'><Image src={iconTwitter} alt="twitter" /></a>
+        <a href="https://facebook.com" target='_blank'><Image src={iconYoutube} alt="youtube" /></a>
 
       </div>
 
