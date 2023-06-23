@@ -1,29 +1,16 @@
-"use client"
 
 import Link from "next/link"
-import { useEffect, useState } from "react"
+
 import Image from "next/image"
 
 import logoDark from '/public/assets/shared/desktop/logo-dark.png'
+import { NavBarClient } from "./navBarClient"
 
 export function NavBar() {
 
-  const [menu, setMenu] = useState(false)
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        document.querySelector('nav')?.classList.add('scroll')
-      } else {
-        document.querySelector('nav')?.classList.remove('scroll')
-      }
-    }
-    )
-
-
-  }, [])
 
   return <nav>
+    <NavBarClient />
     <Link href="/"><Image src={logoDark} alt="logo" /></Link>
     <div>
       <input type="checkbox" name="menu" id="menu" />
